@@ -11,8 +11,8 @@
 //
 //@Data
 //@Entity                  
-//@Table(name="maker")
-//public class MakerEntity {
+//@Table(name="toy")
+//public class ToyEntity {
 //	
 //	@Id            
 //	@Column(name="id")
@@ -22,10 +22,7 @@
 //	@Column(name="name")
 //	private String name;
 //	
-//	@Column(name="career")
-//	private String career;
-//	
 //	@Column(name="p_id")
 //	private String pId;
-//	
+//
 //}

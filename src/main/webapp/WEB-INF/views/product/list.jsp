@@ -107,21 +107,23 @@
 										<thead>
 											<tr>
 												<th>no</th>
-												<th>name</th>
+												<th>category</th>
 												<th>content</th>
 												<th>price</th>
 												<th>stock</th>
-												<th>makerEntities[].name</th>
+												<th>name</th>
+												<th>worker</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>no</td>
-												<td>name</td>
+												<td>category</td>
 												<td>content</td>
 												<td>price</td>
 												<td>stock</td>
-												<td>makerEntities[].name</td>
+												<td>name</td>
+												<td>worker</td>
 											</tr>
 										</tbody>
 									</table>
@@ -147,6 +149,14 @@
 													<input class="form-control" type="hidden" id="example-text-input" name="number" />
 												</div>
 												<div class="mb-3">
+													<label for="example-search-input" class="form-label">상품 종류</label>
+													<input class="form-control" type="text" id="category" name="category" />
+												</div>
+												<div class="mb-3">
+													<label for="example-search-input" class="form-label">상품 id</label>
+													<input class="form-control" type="text" id="itemsId" name="itemsId" />
+												</div>
+												<div class="mb-3">
 													<label for="example-search-input" class="form-label">상품 이름</label>
 													<input class="form-control" type="text" id="name" name="name" />
 												</div>
@@ -161,6 +171,14 @@
 												<div class="mb-3">
 													<label for="example-email-input" class="form-label">재고</label>
 													<input class="form-control" type="text" id="stock" name="stock" />
+												</div>
+												<div class="mb-3">
+													<label for="example-email-input" class="form-label">작업자 id</label>
+													<input class="form-control" type="text" id="workersId" name="workersId" />
+												</div>
+												<div class="mb-3">
+													<label for="example-email-input" class="form-label">작업자</label>
+													<input class="form-control" type="text" id="workers" name="workers" />
 												</div>
 												</div>
 												<button type="button" class="btn btn-primary" id="registBtn">등록</button>
@@ -190,6 +208,10 @@
 													<input class="form-control" type="hidden" id="detail-number" name="detail-number" />
 												</div>
 												<div class="mb-3">
+													<label for="example-search-input" class="form-label">상품 종류</label>
+													<input class="form-control" type="text" id="detail-category" value=" " readonly />
+												</div>
+												<div class="mb-3">
 													<label for="example-search-input" class="form-label">상품 이름</label>
 													<input class="form-control" type="text" id="detail-name" value=" " readonly />
 												</div>
@@ -204,6 +226,10 @@
 												<div class="mb-3">
 													<label for="example-email-input" class="form-label">재고</label>
 													<input class="form-control" type="text" id="detail-stock" value=" " readonly />
+												</div>
+												<div class="mb-3">
+													<label for="example-email-input" class="form-label">작업자</label>
+													<input class="form-control" type="text" id="detail-workers" value=" " readonly />
 												</div>
 												</div>
 												<button type="button" class="btn btn-primary" id="modifyPageBtn">수정</button>
@@ -235,6 +261,14 @@
 													<input class="form-control" type="hidden" id="modify-number" name="modify-number" />
 												</div>
 												<div class="mb-3">
+													<label for="example-search-input" class="form-label">상품 종류</label>
+													<input class="form-control" type="text" id="modify-category" value=" " />
+												</div>
+												<div class="mb-3">
+													<label for="example-search-input" class="form-label">상품 id</label>
+													<input class="form-control" type="text" id="modify-itemsId" value=" " />
+												</div>
+												<div class="mb-3">
 													<label for="example-search-input" class="form-label">상품 이름</label>
 													<input class="form-control" type="text" id="modify-name" value=" " />
 												</div>
@@ -249,6 +283,14 @@
 												<div class="mb-3">
 													<label for="example-email-input" class="form-label">재고</label>
 													<input class="form-control" type="text" id="modify-stock" value=" " />
+												</div>
+												<div class="mb-3">
+													<label for="example-email-input" class="form-label">작업자 id</label>
+													<input class="form-control" type="text" id="modify-workersId" value=" " />
+												</div>
+												<div class="mb-3">
+													<label for="example-email-input" class="form-label">작업자</label>
+													<input class="form-control" type="text" id="modify-workers" value=" " />
 												</div>
 												</div>
 												<button type="button" class="btn btn-primary" id="modifyBtn">수정</button>

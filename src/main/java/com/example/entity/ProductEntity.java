@@ -1,21 +1,17 @@
 package com.example.entity;
 
-import java.util.List;
-
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Table;
 
 import lombok.Data;
 
 @Data
-@Entity                  
 @Table(name="product")
+@MappedSuperclass
 public class ProductEntity {
 	
 	@Id            
@@ -23,8 +19,8 @@ public class ProductEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)   
 	private Long number;
 	
-	@Column(name="name")
-	private String name;
+	@Column(name="category")
+	private String category;
 	
 	@Column(name="content")
 	private String content;
@@ -34,9 +30,5 @@ public class ProductEntity {
 
 	@Column(name="stock")
 	private String stock;
-	
-	@OneToMany
-	@JoinColumn(name="p_id")
-	private List<MakerEntity> makerEntities;
 	
 }
